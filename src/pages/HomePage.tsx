@@ -8,25 +8,25 @@ const HomePage: React.FC = () => {
     {
       title: 'Rubber Stamps',
       description: 'Self-inking, manual, and date stamps for all your office needs',
-      image: 'https://storage.googleapis.com/dualite-generated-images/1c84180d-8521-4f1b-85d1-d9a1f103507d/image.png',
+      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
       features: ['Self-inking Stamps', 'Manual Stamps', 'Date Stamps', 'Custom Designs']
     },
     {
       title: 'Company Seals',
       description: 'Professional embossing seals and common seals for official documents',
-      image: 'https://storage.googleapis.com/dualite-generated-images/2a73752e-503a-4414-94c0-45928d287d7b/image.png',
+      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
       features: ['Embossing Seals', 'Common Seals', 'Official Documents', 'Legal Compliance']
     },
     {
       title: 'Photo Mounts',
       description: 'Custom photo mounting services in various sizes',
-      image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop',
+      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
       features: ['A4 & A3 Sizes', 'Custom Sizes', 'Personalized Mounts', 'Quality Materials']
     },
     {
       title: 'Branding Services',
       description: 'Complete branding solutions for your business',
-      image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop',
+      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
       features: ['Business Cards', 'Banners & Posters', 'T-shirts & Mugs', 'Corporate Gifts']
     }
   ];
@@ -94,7 +94,7 @@ const HomePage: React.FC = () => {
               className="relative"
             >
               <img
-                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=400&fit=crop"
+                src="https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400.png"
                 alt="Magical Hands MSA Services"
                 className="rounded-lg shadow-2xl"
               />

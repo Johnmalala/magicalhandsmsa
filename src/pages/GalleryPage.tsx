@@ -10,63 +10,63 @@ const GalleryPage: React.FC = () => {
       id: 1,
       title: 'Custom Rubber Stamps',
       category: 'Rubber Stamps',
-      image: 'https://storage.googleapis.com/dualite-generated-images/1c84180d-8521-4f1b-85d1-d9a1f103507d/image.png',
+      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400.png',
       description: 'Various custom rubber stamps for different business needs'
     },
     {
       id: 2,
       title: 'Company Seals Collection',
       category: 'Company Seals',
-      image: 'https://storage.googleapis.com/dualite-generated-images/2a73752e-503a-4414-94c0-45928d287d7b/image.png',
+      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400.png',
       description: 'Professional embossing seals for official documents'
     },
     {
       id: 3,
       title: 'Mounted Photo Certificates',
       category: 'Photo Mounts',
-      image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=600&h=400&fit=crop',
+      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400.png',
       description: 'Professional certificate and photo mounting services'
     },
     {
       id: 4,
       title: 'Business Card Designs',
       category: 'Branding',
-      image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=400&fit=crop',
+      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400.png',
       description: 'Creative business card designs for various industries'
     },
     {
       id: 5,
       title: 'Self-Inking Stamps',
       category: 'Rubber Stamps',
-      image: 'https://storage.googleapis.com/dualite-generated-images/1c84180d-8521-4f1b-85d1-d9a1f103507d/image.png',
+      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400.png',
       description: 'High-quality self-inking stamps with clean impressions'
     },
     {
       id: 6,
       title: 'Corporate Banners',
       category: 'Branding',
-      image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop',
+      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400.png',
       description: 'Large format banners for corporate events and promotions'
     },
     {
       id: 7,
       title: 'Date Stamps Collection',
       category: 'Rubber Stamps',
-      image: 'https://storage.googleapis.com/dualite-generated-images/1c84180d-8521-4f1b-85d1-d9a1f103507d/image.png',
+      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400.png',
       description: 'Professional date stamps for office documentation'
     },
     {
       id: 8,
       title: 'Branded Merchandise',
       category: 'Branding',
-      image: 'https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600&h=400&fit=crop',
+      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400.png',
       description: 'Custom branded t-shirts, mugs, and promotional items'
     },
     {
       id: 9,
       title: 'Photo Frame Mounts',
       category: 'Photo Mounts',
-      image: 'https://images.unsplash.com/photo-1582053433976-25c00369fc93?w=600&h=400&fit=crop',
+      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400.png',
       description: 'Professional photo mounting with decorative frames'
     }
   ];

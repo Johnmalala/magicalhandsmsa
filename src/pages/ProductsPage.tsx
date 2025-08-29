@@ -7,26 +7,26 @@ const ProductsPage: React.FC = () => {
     {
       title: 'Rubber Stamps',
       description: 'Professional rubber stamps for all your office and business needs',
-      image: 'https://storage.googleapis.com/dualite-generated-images/1c84180d-8521-4f1b-85d1-d9a1f103507d/image.png',
+      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/500x300.png',
       products: [
         {
           name: 'Self-inking Stamps',
           description: 'Convenient automatic ink application with thousands of impressions',
-          image: 'https://storage.googleapis.com/dualite-generated-images/1c84180d-8521-4f1b-85d1-d9a1f103507d/image.png',
+          image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
           features: ['Up to 10,000 impressions', 'Quick setup', 'Clean impressions', 'Multiple ink colors'],
           popular: true
         },
         {
           name: 'Manual Stamps',
           description: 'Traditional rubber stamps with separate ink pads',
-          image: 'https://storage.googleapis.com/dualite-generated-images/1c84180d-8521-4f1b-85d1-d9a1f103507d/image.png',
+          image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
           features: ['Durable rubber construction', 'Custom designs', 'Various sizes', 'Long-lasting'],
           popular: false
         },
         {
           name: 'Date Stamps',
           description: 'Adjustable date stamps with rotating wheels',
-          image: 'https://storage.googleapis.com/dualite-generated-images/1c84180d-8521-4f1b-85d1-d9a1f103507d/image.png',
+          image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
           features: ['Easy date adjustment', 'Self-inking mechanism', 'Clear date impressions', 'Professional appearance'],
           popular: false
         }
@@ -35,19 +35,19 @@ const ProductsPage: React.FC = () => {
     {
       title: 'Company Seals',
       description: 'Official seals for legal documents and corporate use',
-      image: 'https://storage.googleapis.com/dualite-generated-images/2a73752e-503a-4414-94c0-45928d287d7b/image.png',
+      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/500x300.png',
       products: [
         {
           name: 'Embossing Seals',
           description: 'Raised impression seals for official documents',
-          image: 'https://storage.googleapis.com/dualite-generated-images/2a73752e-503a-4414-94c0-45928d287d7b/image.png',
+          image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
           features: ['Raised embossed impression', 'Durable metal construction', 'Custom corporate designs', 'Legal compliance'],
           popular: true
         },
         {
           name: 'Common Seals',
           description: 'Standard company seals for general business use',
-          image: 'https://storage.googleapis.com/dualite-generated-images/2a73752e-503a-4414-94c0-45928d287d7b/image.png',
+          image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
           features: ['Standard corporate format', 'Professional appearance', 'Quality materials', 'Quick delivery'],
           popular: false
         }
@@ -56,26 +56,26 @@ const ProductsPage: React.FC = () => {
     {
       title: 'Photo Mounts',
       description: 'Professional photo mounting and framing services',
-      image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=500&h=300&fit=crop',
+      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/500x300.png',
       products: [
         {
           name: 'A4 & A3 Photo Mounts',
           description: 'Standard size photo mounting for documents and certificates',
-          image: 'https://images.unsplash.com/photo-1549492423-400254a4e214?w=400&h=300&fit=crop',
+          image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
           features: ['Professional mounting', 'Archive quality materials', 'Clean finish', 'Protective backing'],
           popular: false
         },
         {
           name: 'Custom Size Mounts',
           description: 'Tailored mounting solutions for any photo size',
-          image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400&h=300&fit=crop',
+          image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
           features: ['Any custom dimensions', 'Professional appearance', 'Quality backing board', 'Precise cutting'],
           popular: false
         },
         {
           name: 'Personalized Mounts',
           description: 'Custom designed mounts with personal touches',
-          image: 'https://images.unsplash.com/photo-1517842645767-c6f90415ad90?w=400&h=300&fit=crop',
+          image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
           features: ['Custom text addition', 'Logo integration', 'Color coordination', 'Special occasions'],
           popular: true
         }
@@ -84,33 +84,33 @@ const ProductsPage: React.FC = () => {
     {
       title: 'Branding Services',
       description: 'Complete branding and marketing material solutions',
-      image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=500&h=300&fit=crop',
+      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/500x300.png',
       products: [
         {
           name: 'Business Cards',
           description: 'Professional business cards that make lasting impressions',
-          image: 'https://images.unsplash.com/photo-1615992119417-934d471b764a?w=400&h=300&fit=crop',
+          image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
           features: ['Premium card stock', 'Full color printing', 'Various finishes', 'Quick turnaround'],
           popular: true
         },
         {
           name: 'Banners & Posters',
           description: 'Eye-catching banners and posters for marketing',
-          image: 'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=400&h=300&fit=crop',
+          image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
           features: ['Large format printing', 'Weather resistant options', 'Vibrant colors', 'Custom sizes'],
           popular: false
         },
         {
           name: 'T-shirts & Mugs',
           description: 'Branded merchandise for promotions and gifts',
-          image: 'https://images.unsplash.com/photo-1583947493633-a6311681c33c?w=400&h=300&fit=crop',
+          image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
           features: ['Quality materials', 'Durable printing', 'Various colors', 'Bulk orders available'],
           popular: false
         },
         {
           name: 'Corporate Gifts',
           description: 'Branded corporate gifts and promotional items',
-          image: 'https://images.unsplash.com/photo-1513116478313-2be45c159426?w=400&h=300&fit=crop',
+          image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
           features: ['Wide product range', 'Custom branding', 'Professional packaging', 'Volume discounts'],
           popular: true
         }

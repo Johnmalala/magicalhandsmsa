@@ -83,7 +83,7 @@ const AboutPage: React.FC = () => {
               className="relative"
             >
               <img
-                src="https://images.unsplash.com/photo-1560472355-536de3962603?w=600&h=400&fit=crop"
+                src="https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400.png"
                 alt="Our Workshop"
                 className="rounded-lg shadow-lg"
               />
