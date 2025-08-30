@@ -26,9 +26,9 @@ const Navbar: React.FC = () => {
                 <Phone size={14} />
                 <span>0700 361 655</span>
               </a>
-              <a href="mailto:info@magichandsmsa.com" className="flex items-center space-x-1 hover:text-blue-200">
+              <a href="mailto:info@magicalhandsmsa.com" className="flex items-center space-x-1 hover:text-blue-200">
                 <Mail size={14} />
-                <span>info@magichandsmsa.com</span>
+                <span>info@magicalhandsmsa.com</span>
               </a>
             </div>
             <div className="hidden sm:block">

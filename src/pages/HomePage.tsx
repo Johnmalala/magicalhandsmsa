@@ -79,11 +79,11 @@ const HomePage: React.FC = () => {
               </div>
               
               <a
-                href="mailto:info@magichandsmsa.com"
+                href="mailto:info@magicalhandsmsa.com"
                 className="flex items-center space-x-2 text-blue-200 hover:text-white transition-colors"
               >
                 <Mail size={20} />
-                <span>info@magichandsmsa.com</span>
+                <span>info@magicalhandsmsa.com</span>
               </a>
             </motion.div>
             

@@ -55,8 +55,8 @@ const ContactPage: React.FC = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'info@magichandsmsa.com',
-      link: 'mailto:info@magichandsmsa.com',
+      value: 'info@magicalhandsmsa.com',
+      link: 'mailto:info@magicalhandsmsa.com',
       description: 'Send us an email and we\'ll respond promptly'
     },
     {
