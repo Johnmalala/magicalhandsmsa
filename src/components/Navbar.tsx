@@ -15,6 +15,8 @@ const Navbar: React.FC = () => {
     { name: 'Contact', path: '/contact' },
   ];
 
+  const gmailLink = "https://mail.google.com/mail/?view=cm&fs=1&to=info@magicalhandsmsa.com";
+
   return (
     <nav className="bg-white shadow-lg sticky top-0 z-50">
       {/* Top bar with contact info */}
@@ -26,7 +28,7 @@ const Navbar: React.FC = () => {
                 <Phone size={14} />
                 <span>0700 361 655</span>
               </a>
-              <a href="mailto:info@magicalhandsmsa.com" className="flex items-center space-x-1 hover:text-blue-200">
+              <a href={gmailLink} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 hover:text-blue-200">
                 <Mail size={14} />
                 <span>info@magicalhandsmsa.com</span>
               </a>

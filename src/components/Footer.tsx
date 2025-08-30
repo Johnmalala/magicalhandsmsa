@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Facebook, Instagram, Clock } from 'lucide-react';
 
 const Footer: React.FC = () => {
+  const gmailLink = "https://mail.google.com/mail/?view=cm&fs=1&to=info@magicalhandsmsa.com";
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -47,7 +49,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <Mail size={16} className="text-blue-400" />
-                <a href="mailto:info@magicalhandsmsa.com" className="text-gray-400 hover:text-white transition-colors">
+                <a href={gmailLink} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                   info@magicalhandsmsa.com
                 </a>
               </li>

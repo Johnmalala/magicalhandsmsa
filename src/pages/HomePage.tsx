@@ -38,6 +38,8 @@ const HomePage: React.FC = () => {
     { icon: CheckCircle, title: 'Local Expertise', description: 'Based in Mombasa, serving the entire coast region' }
   ];
 
+  const gmailLink = "https://mail.google.com/mail/?view=cm&fs=1&to=info@magicalhandsmsa.com";
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -79,7 +81,9 @@ const HomePage: React.FC = () => {
               </div>
               
               <a
-                href="mailto:info@magicalhandsmsa.com"
+                href={gmailLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-blue-200 hover:text-white transition-colors"
               >
                 <Mail size={20} />

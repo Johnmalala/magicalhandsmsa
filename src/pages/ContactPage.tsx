@@ -56,7 +56,7 @@ const ContactPage: React.FC = () => {
       icon: Mail,
       title: 'Email',
       value: 'info@magicalhandsmsa.com',
-      link: 'mailto:info@magicalhandsmsa.com',
+      link: 'https://mail.google.com/mail/?view=cm&fs=1&to=info@magicalhandsmsa.com',
       description: 'Send us an email and we\'ll respond promptly'
     },
     {
@@ -159,6 +159,8 @@ const ContactPage: React.FC = () => {
                 {info.link !== '#' ? (
                   <a
                     href={info.link}
+                    target={info.link.startsWith('http') ? '_blank' : undefined}
+                    rel={info.link.startsWith('http') ? 'noopener noreferrer' : undefined}
                     className="text-lg font-medium text-blue-600 hover:text-blue-800 transition-colors block mb-2"
                   >
                     {info.value}
@@ -198,10 +200,16 @@ const ContactPage: React.FC = () => {
                 name="contact" 
                 method="POST" 
                 data-netlify="true"
+                data-netlify-honeypot="bot-field"
                 onSubmit={handleSubmit} 
                 className="space-y-6"
               >
                 <input type="hidden" name="form-name" value="contact" />
+                <p className="hidden">
+                  <label>
+                    Don’t fill this out if you’re human: <input name="bot-field" onChange={handleChange} />
+                  </label>
+                </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
