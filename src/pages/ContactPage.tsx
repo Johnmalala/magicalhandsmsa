@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Phone, Mail, MapPin, Clock, Send, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Send, MessageCircle, CheckCircle, AlertTriangle, Loader } from 'lucide-react';
 
 const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -10,15 +10,31 @@ const ContactPage: React.FC = () => {
     subject: '',
     message: ''
   });
+  const [submissionStatus, setSubmissionStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+
+  const encode = (data: { [key: string]: string }) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  }
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission logic would go here
-    // For now, we'll create a mailto link with the form data
-    const mailtoLink = `mailto:info@magichandsmsa.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
-    )}`;
-    window.location.href = mailtoLink;
+    setSubmissionStatus('submitting');
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...formData })
+    })
+      .then(() => {
+        setSubmissionStatus('success');
+        setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+      })
+      .catch((error) => {
+        setSubmissionStatus('error');
+        console.error(error);
+      });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -178,7 +194,14 @@ const ContactPage: React.FC = () => {
                 Fill out the form below and we'll get back to you as soon as possible.
               </p>
 
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form 
+                name="contact" 
+                method="POST" 
+                data-netlify="true"
+                onSubmit={handleSubmit} 
+                className="space-y-6"
+              >
+                <input type="hidden" name="form-name" value="contact" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -265,12 +288,42 @@ const ContactPage: React.FC = () => {
                   ></textarea>
                 </div>
 
+                {submissionStatus === 'success' && (
+                  <div className="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded-lg flex items-center space-x-3">
+                    <CheckCircle size={24} />
+                    <div>
+                      <p className="font-bold">Message Sent!</p>
+                      <p>Thank you for contacting us. We'll get back to you shortly.</p>
+                    </div>
+                  </div>
+                )}
+
+                {submissionStatus === 'error' && (
+                  <div className="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 rounded-lg flex items-center space-x-3">
+                    <AlertTriangle size={24} />
+                    <div>
+                      <p className="font-bold">Something went wrong.</p>
+                      <p>Please try again or contact us directly via phone or WhatsApp.</p>
+                    </div>
+                  </div>
+                )}
+
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 px-6 rounded-lg font-semibold flex items-center justify-center space-x-2 transition-colors"
+                  disabled={submissionStatus === 'submitting'}
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 px-6 rounded-lg font-semibold flex items-center justify-center space-x-2 transition-colors disabled:bg-blue-400 disabled:cursor-not-allowed"
                 >
-                  <Send size={20} />
-                  <span>Send Message</span>
+                  {submissionStatus === 'submitting' ? (
+                    <>
+                      <Loader size={20} className="animate-spin" />
+                      <span>Sending...</span>
+                    </>
+                  ) : (
+                    <>
+                      <Send size={20} />
+                      <span>Send Message</span>
+                    </>
+                  )}
                 </button>
               </form>
             </motion.div>
