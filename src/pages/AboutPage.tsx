@@ -83,7 +83,7 @@ const AboutPage: React.FC = () => {
               className="relative"
             >
               <img
-                src="https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400.png"
+                src="/images/company-seals.jpg"
                 alt="Our Workshop"
                 className="rounded-lg shadow-lg"
               />

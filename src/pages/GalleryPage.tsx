@@ -10,63 +10,63 @@ const GalleryPage: React.FC = () => {
       id: 1,
       title: 'Custom Rubber Stamps',
       category: 'Rubber Stamps',
-      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400.png',
+      image: '/images/rubber-stamp-1.jpg',
       description: 'Various custom rubber stamps for different business needs'
     },
     {
       id: 2,
       title: 'Company Seals Collection',
       category: 'Company Seals',
-      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400.png',
+      image: '/images/company-seals.jpg',
       description: 'Professional embossing seals for official documents'
     },
     {
       id: 3,
       title: 'Mounted Photo Certificates',
       category: 'Photo Mounts',
-      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400.png',
+      image: '/images/photo-mount.jpg',
       description: 'Professional certificate and photo mounting services'
     },
     {
       id: 4,
       title: 'Business Card Designs',
       category: 'Branding',
-      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400.png',
+      image: '/images/rubber-stamp-3.jpg',
       description: 'Creative business card designs for various industries'
     },
     {
       id: 5,
       title: 'Self-Inking Stamps',
       category: 'Rubber Stamps',
-      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400.png',
+      image: '/images/rubber-stamp-3.jpg',
       description: 'High-quality self-inking stamps with clean impressions'
     },
     {
       id: 6,
       title: 'Corporate Banners',
       category: 'Branding',
-      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400.png',
+      image: '/images/rubber-stamp-3.jpg',
       description: 'Large format banners for corporate events and promotions'
     },
     {
       id: 7,
       title: 'Date Stamps Collection',
       category: 'Rubber Stamps',
-      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400.png',
+      image: '/images/rubber-stamp-2.jpg',
       description: 'Professional date stamps for office documentation'
     },
     {
       id: 8,
       title: 'Branded Merchandise',
       category: 'Branding',
-      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400.png',
+      image: '/images/rubber-stamp-3.jpg',
       description: 'Custom branded t-shirts, mugs, and promotional items'
     },
     {
       id: 9,
       title: 'Photo Frame Mounts',
       category: 'Photo Mounts',
-      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400.png',
+      image: '/images/photo-mount-2.jpg',
       description: 'Professional photo mounting with decorative frames'
     }
   ];

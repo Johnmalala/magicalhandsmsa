@@ -7,26 +7,26 @@ const ProductsPage: React.FC = () => {
     {
       title: 'Rubber Stamps',
       description: 'Professional rubber stamps for all your office and business needs',
-      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/500x300.png',
+      image: '/images/rubber-stamp-1.jpg',
       products: [
         {
           name: 'Self-inking Stamps',
           description: 'Convenient automatic ink application with thousands of impressions',
-          image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
+          image: '/images/rubber-stamp-3.jpg',
           features: ['Up to 10,000 impressions', 'Quick setup', 'Clean impressions', 'Multiple ink colors'],
           popular: true
         },
         {
           name: 'Manual Stamps',
           description: 'Traditional rubber stamps with separate ink pads',
-          image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
+          image: '/images/rubber-stamp-1.jpg',
           features: ['Durable rubber construction', 'Custom designs', 'Various sizes', 'Long-lasting'],
           popular: false
         },
         {
           name: 'Date Stamps',
           description: 'Adjustable date stamps with rotating wheels',
-          image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
+          image: '/images/rubber-stamp-2.jpg',
           features: ['Easy date adjustment', 'Self-inking mechanism', 'Clear date impressions', 'Professional appearance'],
           popular: false
         }
@@ -35,19 +35,19 @@ const ProductsPage: React.FC = () => {
     {
       title: 'Company Seals',
       description: 'Official seals for legal documents and corporate use',
-      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/500x300.png',
+      image: '/images/company-seals.jpg',
       products: [
         {
           name: 'Embossing Seals',
           description: 'Raised impression seals for official documents',
-          image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
+          image: '/images/company-seals.jpg',
           features: ['Raised embossed impression', 'Durable metal construction', 'Custom corporate designs', 'Legal compliance'],
           popular: true
         },
         {
           name: 'Common Seals',
           description: 'Standard company seals for general business use',
-          image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
+          image: '/images/company-seal-2.jpg',
           features: ['Standard corporate format', 'Professional appearance', 'Quality materials', 'Quick delivery'],
           popular: false
         }
@@ -56,26 +56,26 @@ const ProductsPage: React.FC = () => {
     {
       title: 'Photo Mounts',
       description: 'Professional photo mounting and framing services',
-      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/500x300.png',
+      image: '/images/photo-mount.jpg',
       products: [
         {
           name: 'A4 & A3 Photo Mounts',
           description: 'Standard size photo mounting for documents and certificates',
-          image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
+          image: '/images/photo-mount.jpg',
           features: ['Professional mounting', 'Archive quality materials', 'Clean finish', 'Protective backing'],
           popular: false
         },
         {
           name: 'Custom Size Mounts',
           description: 'Tailored mounting solutions for any photo size',
-          image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
+          image: '/images/photo-mount-2.jpg',
           features: ['Any custom dimensions', 'Professional appearance', 'Quality backing board', 'Precise cutting'],
           popular: false
         },
         {
           name: 'Personalized Mounts',
           description: 'Custom designed mounts with personal touches',
-          image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
+          image: '/images/photo-mount-2.jpg',
           features: ['Custom text addition', 'Logo integration', 'Color coordination', 'Special occasions'],
           popular: true
         }
@@ -84,33 +84,33 @@ const ProductsPage: React.FC = () => {
     {
       title: 'Branding Services',
       description: 'Complete branding and marketing material solutions',
-      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/500x300.png',
+      image: '/images/rubber-stamp-3.jpg',
       products: [
         {
           name: 'Business Cards',
           description: 'Professional business cards that make lasting impressions',
-          image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
+          image: '/images/rubber-stamp-3.jpg',
           features: ['Premium card stock', 'Full color printing', 'Various finishes', 'Quick turnaround'],
           popular: true
         },
         {
           name: 'Banners & Posters',
           description: 'Eye-catching banners and posters for marketing',
-          image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
+          image: '/images/rubber-stamp-3.jpg',
           features: ['Large format printing', 'Weather resistant options', 'Vibrant colors', 'Custom sizes'],
           popular: false
         },
         {
           name: 'T-shirts & Mugs',
           description: 'Branded merchandise for promotions and gifts',
-          image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
+          image: '/images/rubber-stamp-3.jpg',
           features: ['Quality materials', 'Durable printing', 'Various colors', 'Bulk orders available'],
           popular: false
         },
         {
           name: 'Corporate Gifts',
           description: 'Branded corporate gifts and promotional items',
-          image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
+          image: '/images/rubber-stamp-3.jpg',
           features: ['Wide product range', 'Custom branding', 'Professional packaging', 'Volume discounts'],
           popular: true
         }

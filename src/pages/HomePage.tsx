@@ -8,25 +8,25 @@ const HomePage: React.FC = () => {
     {
       title: 'Rubber Stamps',
       description: 'Self-inking, manual, and date stamps for all your office needs',
-      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
+      image: '/images/rubber-stamp-1.jpg',
       features: ['Self-inking Stamps', 'Manual Stamps', 'Date Stamps', 'Custom Designs']
     },
     {
       title: 'Company Seals',
       description: 'Professional embossing seals and common seals for official documents',
-      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
+      image: '/images/company-seals.jpg',
       features: ['Embossing Seals', 'Common Seals', 'Official Documents', 'Legal Compliance']
     },
     {
       title: 'Photo Mounts',
       description: 'Custom photo mounting services in various sizes',
-      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
+      image: '/images/photo-mount.jpg',
       features: ['A4 & A3 Sizes', 'Custom Sizes', 'Personalized Mounts', 'Quality Materials']
     },
     {
       title: 'Branding Services',
       description: 'Complete branding solutions for your business',
-      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x300.png',
+      image: '/images/rubber-stamp-3.jpg',
       features: ['Business Cards', 'Banners & Posters', 'T-shirts & Mugs', 'Corporate Gifts']
     }
   ];
@@ -94,7 +94,7 @@ const HomePage: React.FC = () => {
               className="relative"
             >
               <img
-                src="https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400.png"
+                src="/images/company-seals.jpg"
                 alt="Magical Hands MSA Services"
                 className="rounded-lg shadow-2xl"
               />
