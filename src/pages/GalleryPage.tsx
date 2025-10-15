@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { X, ZoomIn } from 'lucide-react';
+import { images } from '../assets';
 
 const GalleryPage: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -10,64 +11,78 @@ const GalleryPage: React.FC = () => {
       id: 1,
       title: 'Custom Rubber Stamps',
       category: 'Rubber Stamps',
-      image: '/images/rubber-stamp-1.jpg',
+      image: images.manualStamp,
       description: 'Various custom rubber stamps for different business needs'
     },
     {
       id: 2,
       title: 'Company Seals Collection',
       category: 'Company Seals',
-      image: '/images/company-seals.jpg',
+      image: images.companySeals,
       description: 'Professional embossing seals for official documents'
     },
     {
       id: 3,
       title: 'Mounted Photo Certificates',
       category: 'Photo Mounts',
-      image: '/images/photo-mount.jpg',
+      image: images.photoMount,
       description: 'Professional certificate and photo mounting services'
     },
     {
       id: 4,
       title: 'Business Card Designs',
       category: 'Branding',
-      image: '/images/rubber-stamp-3.jpg',
+      image: images.branding,
       description: 'Creative business card designs for various industries'
     },
     {
       id: 5,
       title: 'Self-Inking Stamps',
       category: 'Rubber Stamps',
-      image: '/images/rubber-stamp-3.jpg',
+      image: images.selfInkingStamps,
       description: 'High-quality self-inking stamps with clean impressions'
     },
     {
       id: 6,
       title: 'Corporate Banners',
       category: 'Branding',
-      image: '/images/rubber-stamp-3.jpg',
+      image: images.branding,
       description: 'Large format banners for corporate events and promotions'
     },
     {
       id: 7,
       title: 'Date Stamps Collection',
       category: 'Rubber Stamps',
-      image: '/images/rubber-stamp-2.jpg',
+      image: images.selfInkingDaterStamps,
       description: 'Professional date stamps for office documentation'
     },
     {
       id: 8,
       title: 'Branded Merchandise',
       category: 'Branding',
-      image: '/images/rubber-stamp-3.jpg',
+      image: images.branding,
       description: 'Custom branded t-shirts, mugs, and promotional items'
     },
     {
       id: 9,
       title: 'Photo Frame Mounts',
       category: 'Photo Mounts',
-      image: '/images/photo-mount-2.jpg',
+      image: images.photoMount2,
       description: 'Professional photo mounting with decorative frames'
+    },
+    {
+      id: 10,
+      title: 'Heavy Duty Self-Inking Stamps',
+      category: 'Rubber Stamps',
+      image: images.heavyDutyStamp,
+      description: 'Durable stamps for high-volume usage'
+    },
+    {
+      id: 11,
+      title: 'Manual Office Stamp',
+      category: 'Rubber Stamps',
+      image: images.manualStamp2,
+      description: 'Classic and reliable manual stamp for office use'
     }
   ];
 
@@ -136,11 +151,11 @@ const GalleryPage: React.FC = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group"
               >
-                <div className="relative overflow-hidden">
+                <div className="relative overflow-hidden bg-gray-100">
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-64 object-contain group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
                     <button

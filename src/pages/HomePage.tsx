@@ -2,31 +2,32 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Phone, Mail, CheckCircle, Star, ArrowRight } from 'lucide-react';
+import { images } from '../assets';
 
 const HomePage: React.FC = () => {
   const services = [
     {
       title: 'Rubber Stamps',
       description: 'Self-inking, manual, and date stamps for all your office needs',
-      image: '/images/rubber-stamp-1.jpg',
+      image: images.selfInkingStamps,
       features: ['Self-inking Stamps', 'Manual Stamps', 'Date Stamps', 'Custom Designs']
     },
     {
       title: 'Company Seals',
       description: 'Professional embossing seals and common seals for official documents',
-      image: '/images/company-seals.jpg',
+      image: images.companySeals,
       features: ['Embossing Seals', 'Common Seals', 'Official Documents', 'Legal Compliance']
     },
     {
       title: 'Photo Mounts',
       description: 'Custom photo mounting services in various sizes',
-      image: '/images/photo-mount.jpg',
+      image: images.photoMount,
       features: ['A4 & A3 Sizes', 'Custom Sizes', 'Personalized Mounts', 'Quality Materials']
     },
     {
       title: 'Branding Services',
       description: 'Complete branding solutions for your business',
-      image: '/images/rubber-stamp-3.jpg',
+      image: images.branding,
       features: ['Business Cards', 'Banners & Posters', 'T-shirts & Mugs', 'Corporate Gifts']
     }
   ];
@@ -98,9 +99,9 @@ const HomePage: React.FC = () => {
               className="relative"
             >
               <img
-                src="/images/company-seals.jpg"
-                alt="Magical Hands MSA Services"
-                className="rounded-lg shadow-2xl"
+                src={images.homepageBanner}
+                alt="Homepage banner for Magical Hands MSA"
+                className="rounded-lg shadow-2xl w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
             </motion.div>
@@ -134,11 +135,13 @@ const HomePage: React.FC = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
               >
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-48 object-cover"
-                />
+                <div className="w-full h-48 bg-gray-100">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
                     {service.title}

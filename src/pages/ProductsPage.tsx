@@ -1,32 +1,33 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Phone, MessageCircle, CheckCircle, Star } from 'lucide-react';
+import { images } from '../assets';
 
 const ProductsPage: React.FC = () => {
   const productCategories = [
     {
       title: 'Rubber Stamps',
       description: 'Professional rubber stamps for all your office and business needs',
-      image: '/images/rubber-stamp-1.jpg',
+      image: images.manualStampBanner,
       products: [
         {
           name: 'Self-inking Stamps',
           description: 'Convenient automatic ink application with thousands of impressions',
-          image: '/images/rubber-stamp-3.jpg',
+          image: images.selfInkingStamps,
           features: ['Up to 10,000 impressions', 'Quick setup', 'Clean impressions', 'Multiple ink colors'],
           popular: true
         },
         {
           name: 'Manual Stamps',
           description: 'Traditional rubber stamps with separate ink pads',
-          image: '/images/rubber-stamp-1.jpg',
+          image: images.manualStamp,
           features: ['Durable rubber construction', 'Custom designs', 'Various sizes', 'Long-lasting'],
           popular: false
         },
         {
           name: 'Date Stamps',
           description: 'Adjustable date stamps with rotating wheels',
-          image: '/images/rubber-stamp-2.jpg',
+          image: images.selfInkingDaterStamps,
           features: ['Easy date adjustment', 'Self-inking mechanism', 'Clear date impressions', 'Professional appearance'],
           popular: false
         }
@@ -35,19 +36,19 @@ const ProductsPage: React.FC = () => {
     {
       title: 'Company Seals',
       description: 'Official seals for legal documents and corporate use',
-      image: '/images/company-seals.jpg',
+      image: images.companySeals,
       products: [
         {
           name: 'Embossing Seals',
           description: 'Raised impression seals for official documents',
-          image: '/images/company-seals.jpg',
+          image: images.companySeals,
           features: ['Raised embossed impression', 'Durable metal construction', 'Custom corporate designs', 'Legal compliance'],
           popular: true
         },
         {
           name: 'Common Seals',
           description: 'Standard company seals for general business use',
-          image: '/images/company-seal-2.jpg',
+          image: images.companySeal2,
           features: ['Standard corporate format', 'Professional appearance', 'Quality materials', 'Quick delivery'],
           popular: false
         }
@@ -56,26 +57,26 @@ const ProductsPage: React.FC = () => {
     {
       title: 'Photo Mounts',
       description: 'Professional photo mounting and framing services',
-      image: '/images/photo-mount.jpg',
+      image: images.photoMount,
       products: [
         {
           name: 'A4 & A3 Photo Mounts',
           description: 'Standard size photo mounting for documents and certificates',
-          image: '/images/photo-mount.jpg',
+          image: images.photoMount,
           features: ['Professional mounting', 'Archive quality materials', 'Clean finish', 'Protective backing'],
           popular: false
         },
         {
           name: 'Custom Size Mounts',
           description: 'Tailored mounting solutions for any photo size',
-          image: '/images/photo-mount-2.jpg',
+          image: images.photoMount2,
           features: ['Any custom dimensions', 'Professional appearance', 'Quality backing board', 'Precise cutting'],
           popular: false
         },
         {
           name: 'Personalized Mounts',
           description: 'Custom designed mounts with personal touches',
-          image: '/images/photo-mount-2.jpg',
+          image: images.photoMount2,
           features: ['Custom text addition', 'Logo integration', 'Color coordination', 'Special occasions'],
           popular: true
         }
@@ -84,33 +85,33 @@ const ProductsPage: React.FC = () => {
     {
       title: 'Branding Services',
       description: 'Complete branding and marketing material solutions',
-      image: '/images/rubber-stamp-3.jpg',
+      image: images.branding,
       products: [
         {
           name: 'Business Cards',
           description: 'Professional business cards that make lasting impressions',
-          image: '/images/rubber-stamp-3.jpg',
+          image: images.branding,
           features: ['Premium card stock', 'Full color printing', 'Various finishes', 'Quick turnaround'],
           popular: true
         },
         {
           name: 'Banners & Posters',
           description: 'Eye-catching banners and posters for marketing',
-          image: '/images/rubber-stamp-3.jpg',
+          image: images.branding,
           features: ['Large format printing', 'Weather resistant options', 'Vibrant colors', 'Custom sizes'],
           popular: false
         },
         {
           name: 'T-shirts & Mugs',
           description: 'Branded merchandise for promotions and gifts',
-          image: '/images/rubber-stamp-3.jpg',
+          image: images.branding,
           features: ['Quality materials', 'Durable printing', 'Various colors', 'Bulk orders available'],
           popular: false
         },
         {
           name: 'Corporate Gifts',
           description: 'Branded corporate gifts and promotional items',
-          image: '/images/rubber-stamp-3.jpg',
+          image: images.branding,
           features: ['Wide product range', 'Custom branding', 'Professional packaging', 'Volume discounts'],
           popular: true
         }
@@ -225,7 +226,9 @@ const ProductsPage: React.FC = () => {
                       </div>
                     )}
                     
-                    <img src={product.image} alt={product.name} className="w-full h-48 object-cover" />
+                    <div className="w-full h-48 bg-gray-100">
+                      <img src={product.image} alt={product.name} className="w-full h-full object-contain" />
+                    </div>
                     
                     <div className="p-6 flex flex-col flex-grow">
                       <h3 className="text-xl font-semibold text-gray-900 mb-3">

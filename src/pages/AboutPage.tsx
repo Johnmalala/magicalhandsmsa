@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Target, Eye, Award, Users, Clock, ThumbsUp } from 'lucide-react';
+import { images } from '../assets';
 
 const AboutPage: React.FC = () => {
   const values = [
@@ -83,7 +84,7 @@ const AboutPage: React.FC = () => {
               className="relative"
             >
               <img
-                src="/images/company-seals.jpg"
+                src={images.companySeals}
                 alt="Our Workshop"
                 className="rounded-lg shadow-lg"
               />
