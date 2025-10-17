@@ -32,7 +32,7 @@ const GalleryPage: React.FC = () => {
       id: 4,
       title: 'Business Card Designs',
       category: 'Branding',
-      image: images.branding,
+      image: images.businessCards,
       description: 'Creative business card designs for various industries'
     },
     {
@@ -46,7 +46,7 @@ const GalleryPage: React.FC = () => {
       id: 6,
       title: 'Corporate Banners',
       category: 'Branding',
-      image: images.branding,
+      image: images.banners,
       description: 'Large format banners for corporate events and promotions'
     },
     {
@@ -60,7 +60,7 @@ const GalleryPage: React.FC = () => {
       id: 8,
       title: 'Branded Merchandise',
       category: 'Branding',
-      image: images.branding,
+      image: images.tshirtsMugs,
       description: 'Custom branded t-shirts, mugs, and promotional items'
     },
     {

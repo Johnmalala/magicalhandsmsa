@@ -90,28 +90,28 @@ const ProductsPage: React.FC = () => {
         {
           name: 'Business Cards',
           description: 'Professional business cards that make lasting impressions',
-          image: images.branding,
+          image: images.businessCards,
           features: ['Premium card stock', 'Full color printing', 'Various finishes', 'Quick turnaround'],
           popular: true
         },
         {
           name: 'Banners & Posters',
           description: 'Eye-catching banners and posters for marketing',
-          image: images.branding,
+          image: images.banners,
           features: ['Large format printing', 'Weather resistant options', 'Vibrant colors', 'Custom sizes'],
           popular: false
         },
         {
           name: 'T-shirts & Mugs',
           description: 'Branded merchandise for promotions and gifts',
-          image: images.branding,
+          image: images.tshirtsMugs,
           features: ['Quality materials', 'Durable printing', 'Various colors', 'Bulk orders available'],
           popular: false
         },
         {
           name: 'Corporate Gifts',
           description: 'Branded corporate gifts and promotional items',
-          image: images.branding,
+          image: images.corporateGifts,
           features: ['Wide product range', 'Custom branding', 'Professional packaging', 'Volume discounts'],
           popular: true
         }
