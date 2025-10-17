@@ -15,7 +15,7 @@ const HomePage: React.FC = () => {
     {
       title: 'Company Seals',
       description: 'Professional embossing seals and common seals for official documents',
-      image: images.companySeals,
+      image: images.companySeal2,
       features: ['Embossing Seals', 'Common Seals', 'Official Documents', 'Legal Compliance']
     },
     {
@@ -127,7 +127,7 @@ const HomePage: React.FC = () => {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.map((service, index) => (
+            {services.filter(service => service.image).map((service, index) => (
               <motion.div
                 key={service.title}
                 initial={{ opacity: 0, y: 30 }}

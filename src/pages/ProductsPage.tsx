@@ -36,21 +36,14 @@ const ProductsPage: React.FC = () => {
     {
       title: 'Company Seals',
       description: 'Official seals for legal documents and corporate use',
-      image: images.companySeals,
+      image: images.companySeal2,
       products: [
-        {
-          name: 'Embossing Seals',
-          description: 'Raised impression seals for official documents',
-          image: images.companySeals,
-          features: ['Raised embossed impression', 'Durable metal construction', 'Custom corporate designs', 'Legal compliance'],
-          popular: true
-        },
         {
           name: 'Common Seals',
           description: 'Standard company seals for general business use',
           image: images.companySeal2,
           features: ['Standard corporate format', 'Professional appearance', 'Quality materials', 'Quick delivery'],
-          popular: false
+          popular: true
         }
       ]
     },
@@ -211,7 +204,7 @@ const ProductsPage: React.FC = () => {
 
               {/* Products Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {category.products.map((product, productIndex) => (
+                {category.products.filter(product => product.image).map((product, productIndex) => (
                   <motion.div
                     key={product.name}
                     initial={{ opacity: 0, y: 30 }}

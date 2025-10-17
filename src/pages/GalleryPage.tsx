@@ -15,13 +15,6 @@ const GalleryPage: React.FC = () => {
       description: 'Various custom rubber stamps for different business needs'
     },
     {
-      id: 2,
-      title: 'Company Seals Collection',
-      category: 'Company Seals',
-      image: images.companySeals,
-      description: 'Professional embossing seals for official documents'
-    },
-    {
       id: 3,
       title: 'Mounted Photo Certificates',
       category: 'Photo Mounts',
@@ -143,7 +136,7 @@ const GalleryPage: React.FC = () => {
 
           {/* Gallery Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredItems.map((item, index) => (
+            {filteredItems.filter(item => item.image).map((item, index) => (
               <motion.div
                 key={item.id}
                 initial={{ opacity: 0, y: 30 }}

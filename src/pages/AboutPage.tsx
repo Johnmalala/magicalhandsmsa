@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Target, Eye, Award, Users, Clock, ThumbsUp } from 'lucide-react';
+import { Target, Eye, Award, Users, Clock, ThumbsUp, CheckCircle } from 'lucide-react';
 import { images } from '../assets';
 
 const AboutPage: React.FC = () => {
@@ -34,6 +34,27 @@ const AboutPage: React.FC = () => {
     { number: '24hr', label: 'Rush Orders Available' }
   ];
 
+  const whyChooseUs = [
+    {
+      title: 'Quality Craftsmanship',
+      description: 'We use only premium materials and state-of-the-art equipment to ensure every product meets the highest standards.',
+      image: images.heavyDutyStamp,
+      features: ['Premium rubber and metal materials', 'Precision manufacturing processes', 'Quality control at every step']
+    },
+    {
+      title: 'Fast Delivery',
+      description: 'We understand business needs and offer quick turnaround times without compromising on quality.',
+      image: images.banners,
+      features: ['Same-day service for urgent orders', 'Standard delivery within 2-3 days', 'Reliable scheduling and communication']
+    },
+    {
+      title: 'Affordable Pricing',
+      description: 'Competitive prices that provide excellent value for money, making professional branding accessible to all.',
+      image: images.businessCards,
+      features: ['Transparent pricing structure', 'Bulk order discounts available', 'Multiple payment options']
+    }
+  ];
+
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
@@ -62,6 +83,7 @@ const AboutPage: React.FC = () => {
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -80,15 +102,20 @@ const AboutPage: React.FC = () => {
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="relative"
+              className="grid grid-cols-2 gap-4"
             >
               <img
-                src={images.companySeals}
-                alt="Our Workshop"
-                className="rounded-lg shadow-lg"
+                src={images.branding}
+                alt="Branding materials"
+                className="rounded-lg shadow-lg w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+              <img
+                src={images.manualStamp2}
+                alt="Manual stamp"
+                className="rounded-lg shadow-lg w-full h-full object-cover mt-8 transform hover:scale-105 transition-transform duration-300"
+              />
             </motion.div>
           </div>
         </div>
@@ -101,6 +128,7 @@ const AboutPage: React.FC = () => {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.8 }}
               className="bg-white rounded-xl shadow-lg p-8"
             >
@@ -118,6 +146,7 @@ const AboutPage: React.FC = () => {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="bg-white rounded-xl shadow-lg p-8"
             >
@@ -141,6 +170,7 @@ const AboutPage: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
@@ -158,6 +188,7 @@ const AboutPage: React.FC = () => {
                 key={value.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="text-center"
               >
@@ -182,6 +213,7 @@ const AboutPage: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
@@ -199,6 +231,7 @@ const AboutPage: React.FC = () => {
                 key={stat.label}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="text-center"
               >
@@ -220,6 +253,7 @@ const AboutPage: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
@@ -229,56 +263,30 @@ const AboutPage: React.FC = () => {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="bg-white rounded-xl shadow-lg p-6"
-            >
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Quality Craftsmanship</h3>
-              <p className="text-gray-700 mb-4">
-                We use only premium materials and state-of-the-art equipment to ensure every product meets the highest standards.
-              </p>
-              <ul className="text-gray-600 space-y-2">
-                <li>• Premium rubber and metal materials</li>
-                <li>• Precision manufacturing processes</li>
-                <li>• Quality control at every step</li>
-              </ul>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="bg-white rounded-xl shadow-lg p-6"
-            >
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Fast Delivery</h3>
-              <p className="text-gray-700 mb-4">
-                We understand business needs and offer quick turnaround times without compromising on quality.
-              </p>
-              <ul className="text-gray-600 space-y-2">
-                <li>• Same-day service for urgent orders</li>
-                <li>• Standard delivery within 2-3 days</li>
-                <li>• Reliable scheduling and communication</li>
-              </ul>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-white rounded-xl shadow-lg p-6"
-            >
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Affordable Pricing</h3>
-              <p className="text-gray-700 mb-4">
-                Competitive prices that provide excellent value for money, making professional branding accessible to all.
-              </p>
-              <ul className="text-gray-600 space-y-2">
-                <li>• Transparent pricing structure</li>
-                <li>• Bulk order discounts available</li>
-                <li>• Multiple payment options</li>
-              </ul>
-            </motion.div>
+            {whyChooseUs.map((item, index) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col"
+              >
+                <img src={item.image} alt={item.title} className="w-full h-48 object-contain bg-gray-100" />
+                <div className="p-6 flex flex-col flex-grow">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">{item.title}</h3>
+                  <p className="text-gray-700 mb-4 flex-grow">{item.description}</p>
+                  <ul className="text-gray-600 space-y-2">
+                    {item.features.map(feature => (
+                      <li key={feature} className="flex items-center">
+                        <CheckCircle size={16} className="text-green-500 mr-2 flex-shrink-0" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
